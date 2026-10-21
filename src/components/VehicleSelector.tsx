@@ -26,7 +26,7 @@ export function SearchableDropdown({
   const [open, setOpen] = useState(false);
   const [filter, setFilter] = useState("");
   const containerRef = useRef<HTMLDivElement>(null);
-  const isSearchable = options.length > 8;
+  const isSearchable = options.length > 5;
 
   useEffect(() => {
     function handleOutside(e: MouseEvent) {
